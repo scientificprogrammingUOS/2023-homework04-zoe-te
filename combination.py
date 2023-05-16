@@ -14,6 +14,5 @@ def combination(array1, array2, axis=0):
 
 
 if __name__ == "__main__":
-    # use this for your own testing!
     pass
 

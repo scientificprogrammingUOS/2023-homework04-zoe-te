@@ -17,4 +17,4 @@ def strange_pattern(n, m):
 
 if __name__ == "__main__":
     # use this for your own testing!
-    print(strange_pattern(7,5))
+    pass

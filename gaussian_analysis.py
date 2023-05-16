@@ -9,7 +9,7 @@ def gaussian_analysis(loc, scale, lower_bound, upper_bound):
             #100 samples of gaussian distribution
             gd = np.random.normal(loc, scale, size=100)
             #setting boundaries
-            np.fromiter((x for x in gd if (x<lower_bound or x>upper_bound)), dtype=(int or float))
+            gd = gd[(gd >= lower_bound) & (gd <= upper_bound)]
             #calculation mean and sample std
             mean=np.mean(gd)
             std=np.std(gd, ddof=1)
